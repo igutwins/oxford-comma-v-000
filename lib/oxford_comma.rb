@@ -1,8 +1,10 @@
 def oxford_comma(array)
-  last_term = array.pop
-  if  array.size == 0
-    last_term
+  if array.length == 1
+    array
+  elsif array.length == 2
+    array[0]+" and "+array[1]
   else
-    array.join(",")+" and "+last_term
-  end
+  array[-1] = "and "+array[-1]
+  array.join(", ")
+end
 end
