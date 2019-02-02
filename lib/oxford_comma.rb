@@ -8,3 +8,8 @@ def oxford_comma(array)
   array.join(", ")
 end
 end
+
+def oxford_comma(array)
+  last_term = array.pop
+  
+end
